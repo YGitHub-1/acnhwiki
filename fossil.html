@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <title>모동숲 위키</title>
+     <meta charset="utf-8" />
+     <meta name="description" content="닌텐도 스위치 모여봐요 동물의 숲 백과사전입니다. 동물 주민, 곤충/물고기 도감, DIY 레시피, 화석 목록을 확인해볼 수 있습니다." />
+     <!--<meta name="author" content="" />-->
+     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="fossil-StyleSheet.css" />
+</head>
+
+<body>
+     <header>
+          <h1 id="title"><a href="index.html"><img src="ACNH_WIKI_Logo.jpg" /></a></h1>
+     </header>
+     <nav>
+          <ul id="menu">
+               <li>
+                    <a class="topMenu">동물 주민</a>
+                    <ul>
+                         <li><a class="subMenu" href="normal-villager.html">일반 주민</a></li>
+                         <li><a class="subMenu" href="special-villager.html">특수 주민</a></li>
+                    </ul>
+               </li>
+               <li>
+                    <a class="topMenu">도감</a>
+                    <ul>
+                         <li><a class="subMenu" href="insect.html">곤충</a></li>
+                         <li><a class="subMenu" href="fish.html">물고기</a></li>
+                    </ul>
+               </li>
+               <li>
+                    <a class="topMenu">아이템</a>
+                    <ul>
+                         <li><a class="subMenu" href="DIYrecipe.html">DIY 레시피</a></li>
+                         <li><a class="subMenu" href="fossil.html">화석</a></li>
+                         <li><a class="subMenu" href="song.html">노래</a></li>
+                    </ul>
+               </li>
+               <li>
+                    <a class="topMenu">기타</a>
+                    <ul>
+                         <li><a class="subMenu" href="reaction.html">감정 표현</a></li>
+                    </ul>
+               </li>
+          </ul>
+     </nav>
+
+     <article>
+          <h3>화석 73개 목록입니다.<br></h3>
+          <p>순서대로 보고 싶은 카테고리를 클릭해보세요!<br></p>
+
+          <p>한 번 클릭하면 순서대로, 두 번째 클릭하면 역순으로 볼 수 있습니다.<br><br><br></p>
+
+          <table id="myTable">
+               <tr>
+                    <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
+                    <th onclick="sortTable(0)">이름</th>
+                    <th onclick="sortTable(1)">부위</th>
+                    <th onclick="sortTable(2)">가격(벨)</th>
+                    <th onclick="sortTable(3)">박물관 전시 위치</th>
+               </tr>
+               <tr><td>삼엽충</td><td></td><td>1300</td><td>1관 왼쪽</td></tr>
+               <tr><td>아노말로카리스</td><td></td><td>2000</td><td>1관 왼쪽</td></tr>
+               <tr><td>암모나이트</td><td></td><td>1100</td><td>1관 왼쪽</td></tr>
+               <tr><td>호박</td><td></td><td>1200</td><td>1관 왼쪽</td></tr>
+               <tr><td>밀로쿤밍기아</td><td></td><td>1500</td><td>1관 오른쪽</td></tr>
+               <tr><td>둔클레오스테우스</td><td></td><td>3500</td><td>1관 오른쪽</td></tr>
+               <tr><td>에우스테놉테론</td><td></td><td>2000</td><td>1관 오른쪽</td></tr>
+               <tr><td>아칸토스테가</td><td></td><td>2000</td><td>1관 오른쪽</td></tr>
+               <tr><td>상어 이빨 화석</td><td></td><td>1000</td><td>1관 오른쪽</td></tr>
+               <tr><td>오프탈모사우루스</td><td>머리</td><td>2500</td><td>2관 가장자리</td></tr>
+               <tr><td>오프탈모사우루스</td><td>몸통</td><td>2500</td><td>2관 가장자리</td></tr>
+               <tr><td>후타바사우루스</td><td>머리</td><td>4000</td><td>2관 가장자리</td></tr>
+               <tr><td>후타바사우루스</td><td>몸통</td><td>4500</td><td>2관 가장자리</td></tr>
+               <tr><td>후타바사우루스</td><td>꼬리</td><td>4500</td><td>2관 가장자리</td></tr>
+               <tr><td>아르켈론</td><td>머리</td><td>4000</td><td>2관 가장자리</td></tr>
+               <tr><td>아르켈론</td><td>몸통</td><td>3500</td><td>2관 가장자리</td></tr>
+               <tr><td>케찰코아틀루스</td><td>머리</td><td>4500</td><td>2관 가장자리</td></tr>
+               <tr><td>케찰코아틀루스</td><td>왼날개</td><td>5000</td><td>2관 가장자리</td></tr>
+               <tr><td>케찰코아틀루스</td><td>오른날개</td><td>5000</td><td>2관 가장자리</td></tr>
+               <tr><td>프테라노돈</td><td>머리</td><td>4000</td><td>2관 가장자리</td></tr>
+               <tr><td>프테라노돈</td><td>왼날개</td><td>4500</td><td>2관 가장자리</td></tr>
+               <tr><td>프테라노돈</td><td>오른날개</td><td>4500</td><td>2관 가장자리</td></tr>
+               <tr><td>스테고사우루스</td><td>머리</td><td>5000</td><td>2관 가장자리</td></tr>
+               <tr><td>스테고사우루스</td><td>몸통</td><td>4500</td><td>2관 가장자리</td></tr>
+               <tr><td>스테고사우루스</td><td>꼬리</td><td>4000</td><td>2관 가장자리</td></tr>
+               <tr><td>안킬로사우루스</td><td>머리</td><td>3500</td><td>2관 가장자리</td></tr>
+               <tr><td>안킬로사우루스</td><td>몸통</td><td>3000</td><td>2관 가장자리</td></tr>
+               <tr><td>안킬로사우루스</td><td>꼬리</td><td>2500</td><td>2관 가장자리</td></tr>
+               <tr><td>이구아노돈</td><td>머리</td><td>4000</td><td>2관 가장자리</td></tr>
+               <tr><td>이구아노돈</td><td>몸통</td><td>3500</td><td>2관 가장자리</td></tr>
+               <tr><td>이구아노돈</td><td>꼬리</td><td>3000</td><td>2관 가장자리</td></tr>
+               <tr><td>파라사우롤로푸스</td><td>머리</td><td>3500</td><td>2관 가장자리</td></tr>
+               <tr><td>파라사우롤로푸스</td><td>몸통</td><td>3000</td><td>2관 가장자리</td></tr>
+               <tr><td>파라사우롤로푸스</td><td>꼬리</td><td>2500</td><td>2관 가장자리</td></tr>
+               <tr><td>파키케팔로사우루스</td><td>머리</td><td>4000</td><td>2관 가장자리</td></tr>
+               <tr><td>파키케팔로사우루스</td><td>몸통</td><td>3500</td><td>2관 가장자리</td></tr>
+               <tr><td>트리케라톱스</td><td>머리</td><td>5500</td><td>2관 가장자리</td></tr>
+               <tr><td>트리케라톱스</td><td>몸통</td><td>5000</td><td>2관 가장자리</td></tr>
+               <tr><td>트리케라톱스</td><td>꼬리</td><td>4500</td><td>2관 가장자리</td></tr>
+               <tr><td>스피노사우루스</td><td>머리</td><td>4000</td><td>2관 가장자리</td></tr>
+               <tr><td>스피노사우루스</td><td>몸통</td><td>3000</td><td>2관 가장자리</td></tr>
+               <tr><td>스피노사우루스</td><td>꼬리</td><td>2500</td><td>2관 가장자리</td></tr>
+               <tr><td>대변 화석</td><td></td><td>1100</td><td>2관 가장자리</td></tr>
+               <tr><td>발자국 화석</td><td></td><td>1000</td><td>2관 가장자리</td></tr>
+               <tr><td>티렉스</td><td>머리</td><td>6000</td><td>2관 가장자리</td></tr>
+               <tr><td>티렉스</td><td>몸통</td><td>5500</td><td>2관 가장자리</td></tr>
+               <tr><td>티렉스</td><td>꼬리</td><td>5000</td><td>2관 가장자리</td></tr>
+               <tr><td>데이노니쿠스</td><td>머리</td><td>3000</td><td>2관 가장자리</td></tr>
+               <tr><td>데이노니쿠스</td><td>꼬리</td><td>2500</td><td>2관 가장자리</td></tr>
+               <tr><td>시조새</td><td></td><td>1300</td><td>2관 가장자리</td></tr>
+               <tr><td>브라키오사우루스</td><td>머리</td><td>6000</td><td>2관 중앙</td></tr>
+               <tr><td>브라키오사우루스</td><td>가슴</td><td>5500</td><td>2관 중앙</td></tr>
+               <tr><td>브라키오사우루스</td><td>허리</td><td>5500</td><td>2관 중앙</td></tr>
+               <tr><td>브라키오사우루스</td><td>꼬리</td><td>5000</td><td>2관 중앙</td></tr>
+               <tr><td>디플로도쿠스</td><td>머리</td><td>5000</td><td>2관 중앙</td></tr>
+               <tr><td>디플로도쿠스</td><td>목</td><td>4500</td><td>2관 중앙</td></tr>
+               <tr><td>디플로도쿠스</td><td>가슴</td><td>4000</td><td>2관 중앙</td></tr>
+               <tr><td>디플로도쿠스</td><td>허리</td><td>4500</td><td>2관 중앙</td></tr>
+               <tr><td>디플로도쿠스</td><td>꼬리</td><td>5000</td><td>2관 중앙</td></tr>
+               <tr><td>디플로도쿠스</td><td>꼬리 끝</td><td>4000</td><td>2관 중앙</td></tr>
+               <tr><td>디메트로돈</td><td>머리</td><td>5500</td><td>2관 중앙</td></tr>
+               <tr><td>디메트로돈</td><td>몸통</td><td>5000</td><td>2관 중앙</td></tr>
+               <tr><td>쥐라마이아</td><td></td><td>1500</td><td>2관 중앙</td></tr>
+               <tr><td>매머드</td><td>머리</td><td>3000</td><td>3관</td></tr>
+               <tr><td>매머드</td><td>몸통</td><td>2500</td><td>3관</td></tr>
+               <tr><td>스밀로돈</td><td>머리</td><td>2500</td><td>3관</td></tr>
+               <tr><td>스밀로돈</td><td>몸통</td><td>2000</td><td>3관</td></tr>
+               <tr><td>메가케롭스</td><td>머리</td><td>4500</td><td>3관</td></tr>
+               <tr><td>메가케롭스</td><td>몸통</td><td>3500</td><td>3관</td></tr>
+               <tr><td>메가케롭스</td><td>꼬리</td><td>3000</td><td>3관</td></tr>
+               <tr><td>메갈로케로스</td><td>왼쪽 반신</td><td>4000</td><td>3관</td></tr>
+               <tr><td>메갈로케로스</td><td>오른쪽 반신</td><td>5500</td><td>3관</td></tr>
+               <tr><td>오스트랄로피테쿠스</td><td></td><td>1100</td><td>3관</td></tr>
+
+          </table>
+     </article>
+
+     <footer>
+          <p>이 페이지는 Nintendo Switch나 Animal Crossing의 공식 홈페이지가 아닌 개인이 만든 홈페이지입니다.</p>
+     </footer>
+
+     <script>
+          function sortTable(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("myTable");
+            switching = true;
+            //Set the sorting direction to ascending:
+            dir = "asc";
+            /*Make a loop that will continue until
+            no switching has been done:*/
+            while (switching) {
+              //start by saying: no switching is done:
+              switching = false;
+              rows = table.rows;
+              /*Loop through all table rows (except the
+              first, which contains table headers):*/
+              for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /*check if the two rows should switch place,
+                based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                  if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    //if so, mark as a switch and break the loop:
+                    shouldSwitch= true;
+                    break;
+                  }
+                } else if (dir == "desc") {
+                  if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    //if so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                  }
+                }
+              }
+              if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount ++;
+              } else {
+                /*If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                  dir = "desc";
+                  switching = true;
+                }
+              }
+            }
+          }
+     </script>
+</body>
+</html>
